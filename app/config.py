@@ -9,7 +9,7 @@ class Config(BaseSettings):
     )
 
     CLICKHOUSE_URL: str = Field(
-        default="clickhouse://cscore:cscore@localhost:18123/cscore_db",
+        default="clickhouse://login:password@localhost:9003/cscore_db",
         env="CLICKHOUSE_URL",
     )
     CLICKHOUSE_INSERT_SIZE: int = Field(default=5, env="CLICKHOUSE_INSERT_SIZE")
